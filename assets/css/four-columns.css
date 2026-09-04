@@ -6,16 +6,28 @@
 
 @media screen and (min-width: 981px) {
 
-	#main > .posts > * {
-		width: 25%;
-	}
+    #main > .posts > * {
+        width: 25%;
+    }
 
-	#main > .posts > * {
-		border-left: solid 2px #eeeeee;
-	}
+    /* Gjenopprett venstre ramme på alle kort */
+    #main > .posts > article {
+        border-left-width: 2px;
+    }
 
-	#main > .posts > *:nth-child(4n + 1) {
-		border-left: 0;
-	}
+    /* Fjern venstre ramme på første kolonne i hver rad */
+    #main > .posts > article:nth-child(4n + 1) {
+        border-left-width: 0;
+    }
+
+    /* Gjenopprett toppramme */
+    #main > .posts > article {
+        border-top-width: 2px;
+    }
+
+    /* Fjern toppramme på første rad */
+    #main > .posts > article:nth-child(-n + 4) {
+        border-top-width: 0;
+    }
 
 }
