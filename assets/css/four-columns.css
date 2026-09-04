@@ -3,3 +3,19 @@
 		width: 25%;
 	}
 }
+
+@media screen and (min-width: 981px) {
+
+	#main > .posts > * {
+		width: 25%;
+	}
+
+	#main > .posts > * {
+		border-left: solid 2px #eeeeee;
+	}
+
+	#main > .posts > *:nth-child(4n + 1) {
+		border-left: 0;
+	}
+
+}
