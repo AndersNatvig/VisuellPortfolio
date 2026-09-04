@@ -1,0 +1,56 @@
+/* =========================
+   TO KOLONNER – DESKTOP
+   ========================= */
+
+@media screen and (min-width: 981px) {
+
+	#main > .posts > * {
+		width: 50%;
+	}
+
+	/* Standard rammer */
+	#main > .posts > article {
+		border-left-width: 2px;
+		border-top-width: 2px;
+	}
+
+	/* Første kolonne i hver rad */
+	#main > .posts > article:nth-child(2n + 1) {
+		border-left-width: 0;
+	}
+
+	/* Første rad */
+	#main > .posts > article:nth-child(-n + 2) {
+		border-top-width: 0;
+	}
+
+	/* Overstyr gammel 3-kolonne-logikk */
+	#main > .posts > article:nth-child(3n - 2) {
+		border-left-width: 2px;
+	}
+
+	/* Første element skal fortsatt ikke ha venstrekant */
+	#main > .posts > article:first-child {
+		border-left-width: 0;
+	}
+}
+
+
+/* =========================
+   TO KOLONNER – MOBIL
+   ========================= */
+
+@media screen and (max-width: 736px) {
+
+	#main > .posts > article {
+		width: 100% !important;
+		border: 1px solid #eeeeee !important;
+		margin-bottom: 1.5rem;
+	}
+
+	/* Overstyr alle gamle nth-child-regler fra main.css */
+	#main > .posts > article:first-child,
+	#main > .posts > article:nth-child(n) {
+		border: 1px solid #eeeeee !important;
+	}
+}
