@@ -30,3 +30,22 @@
         border-left-width: 0;
     }
 }
+
+@media screen and (max-width: 736px) {
+
+    #main > .posts > article {
+        width: 100%;
+
+        border: 2px solid #eeeeee !important;
+        border-radius: 0;
+
+        margin-bottom: 1rem;
+    }
+
+    /* Sørg for at ingen gamle nth-child-regler fjerner rammer */
+    #main > .posts > article:nth-child(n) {
+        border-left-width: 2px !important;
+        border-top-width: 2px !important;
+    }
+
+}
