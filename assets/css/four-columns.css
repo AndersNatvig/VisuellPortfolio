@@ -4,24 +4,29 @@
         width: 25%;
     }
 
-    /* Opphev den gamle 3-kolonne-regelen */
-    #main > .posts > article:nth-child(3n - 2) {
+    /* Standard rammer */
+    #main > .posts > article {
         border-left-width: 2px;
+        border-top-width: 2px;
     }
 
-    /* Fjern venstre ramme kun på første kolonne i hver 4-kolonne-rad */
+    /* Første kolonne i hver rad */
     #main > .posts > article:nth-child(4n + 1) {
         border-left-width: 0;
     }
 
-    /* Opphev gammel regel for toppramme */
-    #main > .posts > article:nth-child(-n + 3) {
-        border-top-width: 2px;
-    }
-
-    /* Ingen toppramme på de fire første */
+    /* Første rad */
     #main > .posts > article:nth-child(-n + 4) {
         border-top-width: 0;
     }
 
+    /* Overstyr gammel 3-kolonne-logikk eksplisitt */
+    #main > .posts > article:nth-child(3n - 2) {
+        border-left-width: 2px;
+    }
+
+    /* Men behold første element uten venstrekant */
+    #main > .posts > article:first-child {
+        border-left-width: 0;
+    }
 }
