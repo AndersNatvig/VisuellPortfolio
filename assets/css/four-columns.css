@@ -1,31 +1,25 @@
 @media screen and (min-width: 981px) {
-	#main > .posts > * {
-		width: 25%;
-	}
-}
-
-@media screen and (min-width: 981px) {
 
     #main > .posts > * {
         width: 25%;
     }
 
-    /* Gjenopprett venstre ramme på alle kort */
-    #main > .posts > article {
+    /* Opphev den gamle 3-kolonne-regelen */
+    #main > .posts > article:nth-child(3n - 2) {
         border-left-width: 2px;
     }
 
-    /* Fjern venstre ramme på første kolonne i hver rad */
+    /* Fjern venstre ramme kun på første kolonne i hver 4-kolonne-rad */
     #main > .posts > article:nth-child(4n + 1) {
         border-left-width: 0;
     }
 
-    /* Gjenopprett toppramme */
-    #main > .posts > article {
+    /* Opphev gammel regel for toppramme */
+    #main > .posts > article:nth-child(-n + 3) {
         border-top-width: 2px;
     }
 
-    /* Fjern toppramme på første rad */
+    /* Ingen toppramme på de fire første */
     #main > .posts > article:nth-child(-n + 4) {
         border-top-width: 0;
     }
