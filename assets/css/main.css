@@ -2,8 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 /*
-	Hoved CSS, 3 kolonner
-*/
+ * Felles designsystem for portfolioen.
+ *
+ * Innhold: reset og typografi, responsivt rutenett, komponenter,
+ * wrapper, intro, header, navigasjon, hovedinnhold og footer.
+ *
+ * Last denne filen først. Sidefiler lastes etterpå og inneholder bare
+ * nødvendige overstyringer, avgrenset med sidens klasse.
+ * Prosjektoversikten bruker 3 / 2 / 1 kolonner på desktop / nettbrett / mobil.
+ * Se README.md i denne mappen for filansvar og lastrekkefølge.
+ */
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3850,11 +3858,7 @@ input, select, textarea {
 				flex-grow: 0;
 			}
 
-			#main > .posts > * {
-				width: 50%;
-			}
-
-/* Endret til 3 kolonner, 33.3333% */
+/* Felles prosjektoversikt: 3 / 2 / 1 kolonner. */
 
 			/* Desktop: 3 kolonner */
 #main > .posts > * {
@@ -3904,9 +3908,6 @@ input, select, textarea {
 #main > .posts > article p {
     text-align: left; /* Venstrejuster teksten */
     text-justify: auto; /* Fjern tvungen blokkjustering */
-}
-
-#main > .posts > article p {
     line-height: 1.6; /* Gir bedre lesbarhet */
 }
 
@@ -4556,7 +4557,6 @@ input, select, textarea {
 					border-bottom: 0;
 					display: block;
 					font-family: "Source Sans Pro", Helvetica, sans-serif;
-					font-size: 0.9rem;
 					font-size: 0.9rem;
 					font-weight: 900;
 					letter-spacing: 0.075em;
