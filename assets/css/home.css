@@ -1,45 +1,36 @@
 /*
  * Landingsside: kun sidens oppsett og overstyringer.
+ * Intro, logo og navigasjon bruker main.css sin opprinnelige scroll-overgang.
  * Lastes etter main.css. Felles fonter, farger og komponenter defineres der.
  */
 
-.home-page #header {
-    height: 8rem;
-    padding-bottom: 2rem;
-}
-
-.home-page #main > .home-intro {
-    padding: 3rem 4rem 2.5rem;
-    text-align: center;
-}
-
-.home-page #main .home-intro header.major {
+.home-page #intro.home-intro header.major {
     margin-bottom: 1.25rem;
 }
 
-.home-page #main .home-intro h1 {
-    font-size: clamp(2rem, 4.5vw, 3.5rem);
+.home-page #intro.home-intro h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
     line-height: 1.15;
     margin-bottom: 1rem;
 }
 
-.home-page #main .home-intro header.major p {
+.home-page #intro.home-intro header.major p {
     margin: 0;
 }
 
-.home-page #main .home-intro > p {
+.home-page #intro.home-intro > p {
     max-width: 60ch;
     margin: 0 auto 1.5rem;
     text-align: center;
 }
 
-.home-page #main .home-actions {
+.home-page #intro .home-actions {
     flex-wrap: wrap;
     gap: .75rem;
     margin-bottom: 0;
 }
 
-.home-page #main .home-actions li {
+.home-page #intro .home-actions li {
     padding: 0;
 }
 
@@ -174,12 +165,7 @@
 }
 
 @media screen and (max-width: 736px) {
-    .home-page #header {
-        height: 7rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .home-page #main > .home-intro, .home-page #main > .home-project-heading, .home-page #main > .home-about {
+    .home-page #main > .home-project-heading, .home-page #main > .home-about {
         padding: 2rem 1.5rem;
     }
 
@@ -200,4 +186,10 @@
         font-size: max(1rem, 16px);
     }
 
+}
+
+@media screen and (max-width: 736px) {
+    .home-page #intro .home-actions {
+        display: flex;
+    }
 }
