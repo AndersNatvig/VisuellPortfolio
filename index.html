@@ -1,37 +1,68 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Hjem side</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Anders<br />
-						Natvig</h1>
-						<p>Kommunikasjonsrådgiver</a><br />
-						Strategi, tekst, kampanjer og visuell produksjon</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Anders</a>
-					</header>
-
-				<!-- Nav -->
-<nav id="nav">
+<html lang="nb">
+<head>
+ <title>Anders Natvig | Kommunikasjonsrådgiver og visuell portfolio</title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="description" content="Anders Natvig – kommunikasjonsrådgiver med arbeid innen strategi, tekst, kampanjer og visuell produksjon. Se utvalgte prosjekter og ta kontakt." />
+ <link rel="stylesheet" href="assets/css/main.css" />
+ <style>
+/* Landing-page composition; typography, colours and components use main.css. */
+.home-page #header { height: 8rem; padding-bottom: 2rem; }
+.home-page #main > .home-intro { padding: 3rem 4rem 2.5rem; text-align: center; }
+.home-page #main .home-intro header.major { margin-bottom: 1.25rem; }
+.home-page #main .home-intro h1 { font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15; margin-bottom: 1rem; }
+.home-page #main .home-intro header.major p { margin: 0; }
+.home-page #main .home-intro > p { max-width: 60ch; margin: 0 auto 1.5rem; text-align: center; }
+.home-page #main .home-actions { flex-wrap: wrap; gap: .75rem; margin-bottom: 0; }
+.home-page #main .home-actions li { padding: 0; }
+.home-page #main > .home-project-heading { padding: 2rem 4rem 1.5rem; text-align: center; }
+.home-page #main .home-project-heading h2 { font-size: 1.75rem; margin-bottom: .5rem; }
+.home-page #main .home-project-heading p { margin: 0; text-align: center; }
+.home-page #main > .posts > article { padding: 2rem; display: flex; flex-direction: column; }
+.home-page #main > .posts h3 { font-size: 1.25rem; overflow-wrap: anywhere; margin-bottom: 1rem; }
+.home-page #main > .posts .image { margin: 0 0 1.25rem; }
+.home-page #main > .posts .image img { aspect-ratio: 1 / 1; object-fit: contain; }
+.home-page #main > .posts p { margin-bottom: 1.5rem; }
+.home-page #main > .posts .actions { margin-top: auto; }
+.home-page #main > .home-about { padding: 3rem 4rem; }
+.home-page #main .home-about header.major { margin-bottom: 2rem; }
+.home-page #main .home-about header.major h2 { font-size: 1.75rem; line-height: 1.3; }
+.home-page #main .home-about .row p { line-height: 1.85; }
+.home-page #main .home-about .image { margin-bottom: 2rem; }
+.home-page #main .home-about .row > div > p:last-child { margin-bottom: 0; }
+.home-page #main .home-about .row { row-gap: 2rem; }
+.home-page #main [id], .home-page #footer { scroll-margin-top: 1.5rem; }
+.home-page a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.home-page .home-skip { position: absolute; top: -10rem; left: 1rem; z-index: 10003; background: white; color: #212931; padding: .5rem 1rem; }
+.home-page .home-skip:focus { position: fixed; top: 1rem; }
+.home-page #footer { flex-wrap: wrap; }
+.home-page #footer > section { padding: 2rem; }
+.home-page #footer > section:first-child { flex-basis: 100%; border-bottom: 2px solid #e2e2e2; }
+.home-page #footer p { overflow-wrap: anywhere; }
+@media screen and (min-width: 737px) and (max-width: 980px) {
+ .home-page #main > .posts > article:nth-child(n) { border-left-width: 2px; border-top-width: 2px; }
+ .home-page #main > .posts > article:nth-child(2n + 1) { border-left-width: 0; }
+ .home-page #main > .posts > article:nth-child(-n + 2) { border-top-width: 0; }
+}
+@media screen and (max-width: 736px) {
+ .home-page #header { height: 7rem; padding-bottom: 1.5rem; }
+ .home-page #main > .home-intro, .home-page #main > .home-project-heading, .home-page #main > .home-about { padding: 2rem 1.5rem; }
+ .home-page #main > .posts > article { padding: 1.5rem; }
+ .home-page #main > .posts > article:nth-child(n) { border-left-width: 0; border-top-width: 2px; }
+ .home-page #main > .posts > article:first-child { border-top-width: 0; }
+ .home-page #main { font-size: max(1rem, 16px); }
+}
+</style>
+ <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload home-page">
+<a class="home-skip" href="#main">Hopp til innhold</a>
+<div id="wrapper">
+ <header id="header"><a href="index.html" class="logo">Anders</a></header>
+ <nav id="nav">
 	<ul class="links">
-		<li class="active"><a href="Hjem.html">Hjem</a></li>
+		<li class="active"><a href="index.html" aria-current="page">Hjem</a></li>
 		<li><a href="strategi.html">Strategi og rådgivning</a></li>
 		<li><a href="tekst.html">Tekst og redaksjonelt</a></li>
 		<li><a href="innhold.html">Innhold og kampanjer</a></li>
@@ -46,166 +77,114 @@
 		</li>
 	</ul>
 </nav>
-
-				<!-- Om meg -->
-					<div id="main">
-
-						<!-- Strategi -->
-							<article class="post featured">
-								<header class="major">
-									<a class="image main"><img src="images/Banner.med.pb.png" alt="" /></a>
-									<p>Siden er under oppussing :D</p>
-									<span class="date">Om meg</span>
-									<h2><a>Strategi</a></h2>
-									<p>Først forstå. Så kommunisere.</p>
-								</header>
-									<p>God kommunikasjon starter før noe blir skrevet, filmet eller publisert. Jeg begynner med behovet: <b>Hvem skal vi nå, 
-									hva skal de sitte igjen med</b>, og hvor møter vi dem best? Derfra bygger jeg budskap, kanalvalg og tiltak rundt målet vi ønsker å nå.</p>
-							</article>
-
-						<!-- Innhold -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a>Innhold</a></h2>
-									<p>Riktig format for riktig budskap</p>
-								</header>
-									<p> Noen ganger er løsningen en artikkel. Andre ganger en kampanje, video, nettsidetekst eller SoMe-post. 
-										Jeg jobber med tekst, design, foto og video, og velger format etter hva kommunikasjonen skal oppnå.</p>
-								</ul>
-							</article>
-
-						<!-- Effekt -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a>Effekt</a></h2>
-									<p>Kommunikasjon skal gjøre en jobb</p>
-								</header>
-									<p>Publisering er ikke slutten på arbeidet. Jeg følger med på rekkevidde, engasjement og respons for å forstå hva som fungerer 
-										og hva som bør gjøres annerledes neste gang. Målet er ikke mest mulig innhold, men kommunikasjon som når fram.</p>
-
-							</article>
-
-
-
-						<!-- Utvalgte poster -->
-							<section class="posts">
-								<article>
+ <main id="main" tabindex="-1">
+  <section class="home-intro" aria-labelledby="home-title">
+   <header class="major">
+    <h1 id="home-title">Anders Natvig</h1>
+    <p>Kommunikasjonsrådgiver<br />Strategi, tekst, kampanjer og visuell produksjon.</p>
+   </header>
+   <p>Jeg jobber med tekst, design, foto og video, og velger format etter hva kommunikasjonen skal oppnå.</p>
+   <ul class="actions special home-actions">
+    <li><a href="#prosjekter" class="button primary">Se prosjekter</a></li>
+    <li><a href="#om-meg" class="button">Om meg</a></li>
+    <li><a href="#footer" class="button">Ta kontakt</a></li>
+   </ul>
+  </section>
+  <header class="home-project-heading" id="prosjekter">
+   <h2>Utvalgte prosjekter</h2>
+   <p>Grafisk profil, film, foto og innhold til sosiale medier.</p>
+  </header>
+  <section class="posts" aria-label="Utvalgte prosjekter">
+<article>
 									<header>
 										<span class="date">Juni, 2024</span>
-										<h2><a href="GF.7evnt.html">7EVNT</a></h2>
+										<h3><a href="GF.7evnt.html">7EVNT</a></h3>
 									</header>
-									<a href="GF.7evnt.html" class="image fit"><img src="images/7evnt/7evnt.storlogo1.png" alt="" /></a>
+									<a href="GF.7evnt.html" class="image fit" tabindex="-1" aria-hidden="true"><img src="images/7evnt/7evnt.storlogo1.png" alt="" loading="lazy" decoding="async" /></a>
 									<p>Grafisk profil for en lyd, lys og event startup</p>
 									<ul class="actions special">
 										<li><a href="GF.7evnt.html" class="button">Hele prosjektet</a></li>
 									</ul>
 								</article>
-								<article>
+<article>
 									<header>
 										<span class="date">April, 2022</span>
-										<h2><a href="GF.konpop.html">Konpop</a></h2>
+										<h3><a href="GF.konpop.html">Konpop</a></h3>
 									</header>
-									<a href="GF.konpop.html" class="image fit"><img src="images/Konpop/konpop.logoflex.png" alt="" /></a>
+									<a href="GF.konpop.html" class="image fit" tabindex="-1" aria-hidden="true"><img src="images/Konpop/konpop.logoflex.png" alt="" loading="lazy" decoding="async" /></a>
 									<p>Grafisk profil for en content creator</p>
 									<ul class="actions special">
 										<li><a href="GF.konpop.html" class="button">Hele prosjektet</a></li>
 									</ul>
 								</article>
-								<article>
+<article>
 									<header>
 										<span class="date">2021 - 2025</span>
-										<h2><a href="videoprod.html">Videoproduksjon</a></h2>
+										<h3><a href="videoprod.html">Videoproduksjon</a></h3>
 									</header>
-									<a href="videoprod.html" class="image fit"><img src="images/Film.thumbnail.png" alt="" /></a>
+									<a href="videoprod.html" class="image fit" tabindex="-1" aria-hidden="true"><img src="images/Film.thumbnail.png" alt="" loading="lazy" decoding="async" /></a>
 									<p>Videoer og filmer jeg har produsert</p>
 									<ul class="actions special">
-										<li><a href="videoprod.html" class="button">Se prosjekteter</a></li>
+										<li><a href="videoprod.html" class="button">Se prosjektet</a></li>
 									</ul>
 								</article>
-								<article>
+<article>
 									<header>
 										<span class="date">Januar, 2021</span>
-										<h2><a href="Bel-air.html">Bel-Air<br />
-										2021</a></h2>
+										<h3><a href="Bel-air.html">Bel-Air</a></h3>
 									</header>
-									<a href="Bel-air.html" class="image fit"><img src="images/Russ/LA/BelAir.NBC.png" alt="" /></a>
+									<a href="Bel-air.html" class="image fit" tabindex="-1" aria-hidden="true"><img src="images/Russ/LA/BelAir.NBC.png" alt="" loading="lazy" decoding="async" /></a>
 									<p>Russelogo design med video og genser design</p>
 									<ul class="actions special">
-										<li><a href="Bel-air.html" class="button">Full Story</a></li>
+										<li><a href="Bel-air.html" class="button">Se prosjektet</a></li>
 									</ul>
 								</article>
-								<article>
+<article>
 									<header>
 										<span class="date">Januar, 2022</span>
-										<h2><a href="some.html">SoMe<br />
-										poster</a></h2>
+										<h3><a href="some.html">SoMe-poster</a></h3>
 									</header>
-									<a href="some.html" class="image fit"><img src="images/Thumbnails/SoMe.thumbnail1x1.jpg" alt="" /></a>
+									<a href="some.html" class="image fit" tabindex="-1" aria-hidden="true"><img src="images/Thumbnails/SoMe.thumbnail1x1.jpg" alt="" loading="lazy" decoding="async" /></a>
 									<p>Utvalg av SoMe-poster jeg har produsert</p>
 									<ul class="actions special">
-										<li><a href="some.html" class="button">Full Story</a></li>
+										<li><a href="some.html" class="button">Se prosjektet</a></li>
 									</ul>
 								</article>
-								<article>
+<article>
 									<header>
 										<span class="date">2020 - 2025</span>
-										<h2><a href="Fotografering.html">Fotografering<br/>
-										---</a></h2>
+										<h3><a href="Fotografering.html">Fotografering</a></h3>
 									</header>
-									<a href="Fotografering.html" class="image fit"><img src="images/foto/Fotografering.thumbnail.png" alt="" /></a>
+									<a href="Fotografering.html" class="image fit" tabindex="-1" aria-hidden="true"><img src="images/foto/Fotografering.thumbnail.png" alt="" loading="lazy" decoding="async" /></a>
 									<p>Ulike fotooppdrag jeg har gjennomført</p>
 									<ul class="actions special">
-										<li><a href="Fotografering.html" class="button">Full Story</a></li>
+										<li><a href="Fotografering.html" class="button">Se prosjektet</a></li>
 									</ul>
 								</article>
-								<article>
-								</article>
-								<article>
-								</article>
-								<article>
-								</article>
-							</section>
-
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<p>Dette området er lagd av Anders Natvig med HTML, CSS og Java script</p>						
-						</section>
-
-							<section>
-								<h3>Telefon</h3>
-								<p>(+47) 941 83 769</p>
-							</section>
-							<section>
-								<h3>Epost</h3>
-								<p>anderb0912@gmail.com</p>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright 
-					<div id="copyright">
-						<ul><li>&copy; Anders Natvig</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div> -->
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-
+  </section>
+  <section class="home-about" id="om-meg" aria-labelledby="about-title">
+   <header class="major"><h2 id="about-title">Slik jobber jeg</h2><p>Fra behov og budskap til innhold og effekt.</p></header>
+   <span class="image fit"><img src="images/Banner.med.pb.png" alt="Anders Natvig" loading="lazy" decoding="async" /></span>
+   <div class="row"><div class="col-4 col-12-medium"><header><h3>Strategi</h3><p>Først forstå. Så kommunisere.</p></header><p>God kommunikasjon starter før noe blir skrevet, filmet eller publisert. Jeg begynner med behovet: <b>Hvem skal vi nå, 
+									hva skal de sitte igjen med</b>, og hvor møter vi dem best? Derfra bygger jeg budskap, kanalvalg og tiltak rundt målet vi ønsker å nå.</p></div>
+<div class="col-4 col-12-medium"><header><h3>Innhold</h3><p>Riktig format for riktig budskap</p></header><p> Noen ganger er løsningen en artikkel. Andre ganger en kampanje, video, nettsidetekst eller SoMe-post. 
+										Jeg jobber med tekst, design, foto og video, og velger format etter hva kommunikasjonen skal oppnå.</p></div>
+<div class="col-4 col-12-medium"><header><h3>Effekt</h3><p>Kommunikasjon skal gjøre en jobb</p></header><p>Publisering er ikke slutten på arbeidet. Jeg følger med på rekkevidde, engasjement og respons for å forstå hva som fungerer 
+										og hva som bør gjøres annerledes neste gang. Målet er ikke mest mulig innhold, men kommunikasjon som når fram.</p></div></div>
+  </section>
+ </main>
+ <footer id="footer">
+  <section><h2>Ta kontakt</h2><p>Anders Natvig · Kommunikasjonsrådgiver</p></section>
+  <section><h3>Telefon</h3><p><a href="tel:+4794183769">(+47) 941 83 769</a></p></section>
+  <section><h3>E-post</h3><p><a href="mailto:anderb0912@gmail.com">anderb0912@gmail.com</a></p></section>
+ </footer>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
-
-
-
-
