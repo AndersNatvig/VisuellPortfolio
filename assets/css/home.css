@@ -1,8 +1,34 @@
 /*
  * Landingsside: kun sidens oppsett og overstyringer.
- * Intro, logo og navigasjon bruker main.css sin opprinnelige scroll-overgang.
+ * Intro, logo og navigasjon ligger i normal dokumentflyt uten overlapp.
  * Lastes etter main.css. Felles fonter, farger og komponenter defineres der.
  */
+
+/* Keep the expanded introduction above the logo and navigation.
+ * main.css pulls these elements upward for the original, shorter intro.
+ * Override both offsets at every breakpoint, including while scrolling.
+ */
+.home-page #intro.home-intro {
+    min-height: 75vh;
+    min-height: 75svh;
+    padding: 4rem 2rem;
+    justify-content: center;
+}
+
+.home-page #intro + #header {
+    margin-top: 0;
+    height: auto;
+    min-height: 8rem;
+    padding: 2rem;
+}
+
+.home-page #nav {
+    margin-top: 0;
+}
+
+.home-page #intro.home-intro > * {
+    flex-shrink: 0;
+}
 
 .home-page #intro.home-intro header.major {
     margin-bottom: 1.25rem;
