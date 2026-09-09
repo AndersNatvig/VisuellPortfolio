@@ -11,8 +11,8 @@
 
 	/* Standard rammer */
 	#main > .posts > article {
-		border-left-width: 2px;
-		border-top-width: 2px;
+		border-left-width: 0px;
+		border-top-width: 0px;
 	}
 
 	/* Første kolonne i hver rad */
@@ -27,7 +27,7 @@
 
 	/* Overstyr gammel 3-kolonne-logikk */
 	#main > .posts > article:nth-child(3n - 2) {
-		border-left-width: 2px;
+		border-left-width: 0px;
 	}
 
 	/* Første element skal fortsatt ikke ha venstrekant */
