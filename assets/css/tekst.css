@@ -1,0 +1,62 @@
+/*
+ * Tekstoversikten. Lastes etter main.css.
+ * Sideoppsett og størrelser; felles designsystem beholdes i main.css.
+ */
+.text-page #main {
+    padding-bottom: 3rem;
+}
+.text-page #main > .text-intro {
+    padding: 3rem 4rem;
+}
+.text-page #main header.major {
+    margin-bottom: 1.25rem;
+}
+.text-page #main > .post header.major h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+.text-page #main .text-intro > p {
+    max-width: 60ch;
+    text-align: center;
+    margin: 0 auto;
+}
+.text-page #main > .text-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.text-page #main > .text-cards > article:nth-child(n) {
+    width: auto;
+    padding: 2rem;
+    border: 0;
+    border-left: 2px solid #eeeeee;
+}
+.text-page #main > .text-cards > article:first-child {
+    border-left: 0;
+}
+.text-page #main .text-cards h2 {
+    font-size: 1.35rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+@media screen and (max-width: 980px) {
+    .text-page #main > .text-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .text-page #main > .text-cards > article:nth-child(n) {
+        border-left: 0;
+        border-top: 2px solid #eeeeee;
+    }
+    .text-page #main > .text-cards > article:first-child {
+        border-top: 0;
+    }
+}
+@media screen and (max-width: 736px) {
+    .text-page #main > .text-intro,
+    .text-page #main > .text-cards > article:nth-child(n) {
+        padding: 2rem 1.5rem;
+    }
+    .text-page #main {
+        font-size: max(1rem, 16px);
+    }
+}
