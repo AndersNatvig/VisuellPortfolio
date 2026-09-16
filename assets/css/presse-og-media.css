@@ -1,0 +1,140 @@
+/*
+ * Presse og media: variert sideoppsett etter main.css.
+ * Felles fonter, farger, knapper og bokser beholdes.
+ */
+.press-page #main > .press-case {
+    padding: 3rem 4rem;
+}
+.press-page #main > .post header.major h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    line-height: 1.2;
+}
+.press-case header.major { margin-bottom: 2rem; }
+.press-case header.major > p,
+.press-case .press-lead,
+.press-case .press-section > p,
+.press-case .press-quality > p {
+    max-width: 66ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.press-case .press-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #eeeeee;
+}
+.press-case h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.press-case .press-flow {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin: 2rem 0;
+}
+.press-case .press-flow li {
+    padding: 1rem;
+    border-top: 2px solid #eeeeee;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.press-case .press-flow span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+}
+.press-case .press-emphasis { text-align: center; }
+.press-case .press-quality {
+    margin: 3rem 0 0;
+    padding: 2rem;
+    background: #f5f5f5;
+}
+.press-case .press-training {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 2.5rem;
+}
+.press-case .press-training-topics {
+    border-left: 2px solid #eeeeee;
+    padding-left: 2rem;
+}
+.press-case .press-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+}
+.press-case .press-pair h2 {
+    text-align: left;
+    font-size: 1.5rem;
+}
+.press-case .press-training p,
+.press-case .press-pair p,
+.press-case .press-responsibility p {
+    line-height: 1.85;
+}
+.press-case .press-responsibility {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 2.5rem;
+}
+.press-case .press-stat {
+    padding: 1.5rem;
+    border: 2px solid #eeeeee;
+    text-align: center;
+    align-self: start;
+}
+.press-case .press-stat strong {
+    display: block;
+    font: 900 2.5rem/1.2 "Source Sans Pro", Helvetica, sans-serif;
+    margin-bottom: .75rem;
+}
+.press-case .press-stat span { display: block; }
+.press-case section > p:last-child,
+.press-case .press-training > div > :last-child,
+.press-case .press-responsibility > div > :last-child { margin-bottom: 0; }
+.press-case .press-links {
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-bottom: 0;
+}
+.press-case .press-links li { padding: 0; }
+.press-case .button {
+    white-space: normal;
+    height: auto;
+    line-height: 1.6;
+    padding: .85rem 1.25rem;
+}
+.press-case a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+@media screen and (max-width: 980px) {
+    .press-case .press-training,
+    .press-case .press-pair,
+    .press-case .press-responsibility {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+    }
+    .press-case .press-training-topics {
+        border-left: 0;
+        border-top: 2px solid #eeeeee;
+        padding: 1.5rem 0 0;
+    }
+}
+@media screen and (max-width: 736px) {
+    .press-page #main > .press-case {
+        padding: 2rem 1.5rem;
+        font-size: max(1rem, 16px);
+    }
+    .press-case h2 { font-size: 1.5rem; }
+    .press-case .press-section { margin-top: 2rem; padding-top: 2rem; }
+    .press-case .press-quality { margin-top: 2rem; padding: 1.5rem; }
+    .press-case .press-flow { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
+}
