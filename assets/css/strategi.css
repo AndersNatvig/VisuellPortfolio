@@ -2,9 +2,9 @@
  * Strategioversikten og tilhørende prosjektsider.
  * Lastes etter main.css. Kun sideoppsett og størrelser overstyres her.
  */
-/* Luft mellom prosjektoversikten og kontaktfeltet. */
-.strategy-page #main + #footer {
-    margin-top: clamp(2rem, 4vw, 4rem);
+/* Hvit luft under kortene, innenfor hovedinnholdets bakgrunn. */
+.strategy-page #main {
+    padding-bottom: 3rem;
 }
 
 .strategy-page #main > .post {
