@@ -1,0 +1,64 @@
+/*
+ * Publiserte artikler. Lastes etter main.css.
+ * Bildekilder endres i Artikler.htmls img-elementer (BILDE 1–4).
+ */
+.articles-page #main > .post {
+    padding: 3rem 4rem;
+}
+.articles-page #main > .post header.major h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+.articles-page #main .article-intro header.major {
+    margin: 0;
+}
+.articles-page #main .article-example > * {
+    max-width: 66ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.articles-page #main .article-example h2 {
+    font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.articles-page #main .article-meta {
+    font-size: .9em;
+    margin-bottom: .75rem;
+}
+.articles-page #main .article-image {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.articles-page #main .article-image img {
+    width: 100%;
+    height: auto;
+}
+.articles-page #main .article-example > .actions {
+    margin-bottom: 0;
+}
+.articles-page #main > .article-back {
+    padding: 2rem 1.5rem 3rem;
+}
+.articles-page #main .article-back .actions {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+.articles-page #main .button {
+    white-space: normal;
+    height: auto;
+    line-height: 1.6;
+    padding: .85rem 1.25rem;
+}
+.articles-page a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+@media screen and (max-width: 736px) {
+    .articles-page #main > .post {
+        padding: 2rem 1.5rem;
+        font-size: max(1rem, 16px);
+    }
+}
