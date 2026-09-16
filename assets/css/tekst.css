@@ -1,11 +1,12 @@
 /*
- * Tekstoversikten. Lastes etter main.css.
+ * Tekstoversikten og tilhørende undersider. Lastes etter main.css.
  * Sideoppsett og størrelser; felles designsystem beholdes i main.css.
  */
 .text-page #main {
     padding-bottom: 3rem;
 }
-.text-page #main > .text-intro {
+.text-page #main > .text-intro,
+.text-page #main > .text-placeholder {
     padding: 3rem 4rem;
 }
 .text-page #main header.major {
@@ -26,6 +27,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .text-page #main > .text-cards > article:nth-child(n) {
+    display: flex;
+    flex-direction: column;
     width: auto;
     padding: 2rem;
     border: 0;
@@ -53,10 +56,38 @@
 }
 @media screen and (max-width: 736px) {
     .text-page #main > .text-intro,
+    .text-page #main > .text-placeholder,
     .text-page #main > .text-cards > article:nth-child(n) {
         padding: 2rem 1.5rem;
     }
     .text-page #main {
         font-size: max(1rem, 16px);
     }
+}
+
+.text-page #main .text-cards .actions {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.text-page #main .button {
+    white-space: normal;
+    height: auto;
+    line-height: 1.6;
+    padding: .85rem 1.25rem;
+}
+.text-page #main .text-placeholder .box {
+    max-width: 60ch;
+    margin: 2rem auto;
+}
+.text-page #main .text-placeholder .box p {
+    margin: 0;
+    text-align: center;
+}
+.text-page #main .text-back {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+.text-page a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
 }
