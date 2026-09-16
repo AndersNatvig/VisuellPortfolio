@@ -1,0 +1,71 @@
+/*
+ * Rådgivning: sideoppsett og overstyringer etter main.css.
+ * Felles typografi, farger og knapper kommer fra main.css.
+ */
+.advice-page #main > .advice-case {
+    padding: 3rem 4rem;
+}
+.advice-page #main > .post header.major h1 {
+    max-width: 24ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.advice-case header.major {
+    margin-bottom: 2rem;
+}
+.advice-case header.major > p,
+.advice-case .advice-lead,
+.advice-case .advice-section > p {
+    max-width: 66ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advice-case .advice-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #eeeeee;
+}
+.advice-case h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.advice-case .advice-section > p:last-child {
+    margin-bottom: 0;
+}
+.advice-case .advice-links {
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-bottom: 0;
+}
+.advice-case .advice-links li {
+    padding: 0;
+}
+.advice-case .button {
+    white-space: normal;
+    height: auto;
+    line-height: 1.6;
+    padding: .85rem 1.25rem;
+}
+.advice-case a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+@media screen and (max-width: 736px) {
+    .advice-page #main > .advice-case {
+        padding: 2rem 1.5rem;
+        font-size: max(1rem, 16px);
+    }
+    .advice-case .advice-section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    .advice-case h2 {
+        font-size: 1.5rem;
+    }
+}
