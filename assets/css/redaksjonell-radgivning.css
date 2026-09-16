@@ -1,0 +1,71 @@
+/*
+ * Redaksjonell rådgivning. Lastes etter main.css.
+ * Kun sideoppsett; felles typografi, farger og komponenter beholdes.
+ */
+.editorial-page #main > .editorial-case {
+    padding: 3rem 4rem;
+}
+.editorial-page #main > .post header.major h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.editorial-case header.major {
+    margin-bottom: 2rem;
+}
+.editorial-case > p,
+.editorial-case header.major > p,
+.editorial-case .editorial-section > p,
+.editorial-case .editorial-topics {
+    max-width: 66ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.editorial-case .editorial-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #eeeeee;
+}
+.editorial-case h2 {
+    max-width: 32ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.75rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.editorial-case .editorial-section > :last-child {
+    margin-bottom: 0;
+}
+.editorial-case .editorial-links {
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+.editorial-case .editorial-links li {
+    padding: 0;
+}
+.editorial-case .button {
+    white-space: normal;
+    height: auto;
+    line-height: 1.6;
+    padding: .85rem 1.25rem;
+}
+.editorial-case a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+@media screen and (max-width: 736px) {
+    .editorial-page #main > .editorial-case {
+        padding: 2rem 1.5rem;
+        font-size: max(1rem, 16px);
+    }
+    .editorial-case .editorial-section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    .editorial-case h2 {
+        font-size: 1.5rem;
+    }
+}
