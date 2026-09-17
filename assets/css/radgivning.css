@@ -1,10 +1,5 @@
-/*
- * Rådgivning: sideoppsett og overstyringer etter main.css.
- * Felles typografi, farger og knapper kommer fra main.css.
- */
-.advice-page #main > .advice-case {
-    padding: 3rem 4rem;
-}
+/* Kommunikasjonsrådgivning: sidetillegg til main.css. */
+.advice-page #main > .advice-case { padding: 3rem 4rem; }
 .advice-page #main > .post header.major h1 {
     max-width: 24ch;
     margin-left: auto;
@@ -14,58 +9,52 @@
     overflow-wrap: anywhere;
     text-wrap: balance;
 }
-.advice-case header.major {
-    margin-bottom: 2rem;
-}
+.advice-case header.major { margin-bottom: 2rem; }
 .advice-case header.major > p,
 .advice-case .advice-lead,
-.advice-case .advice-section > p {
-    max-width: 66ch;
-    margin-left: auto;
-    margin-right: auto;
-}
-.advice-case .advice-section {
-    margin-top: 3rem;
-    padding-top: 3rem;
-    border-top: 2px solid #eeeeee;
-}
-.advice-case h2 {
-    font-size: 1.75rem;
-    text-align: center;
-    overflow-wrap: anywhere;
-    text-wrap: balance;
-}
-.advice-case .advice-section > p:last-child {
-    margin-bottom: 0;
-}
-.advice-case .advice-links {
-    flex-wrap: wrap;
-    gap: .75rem;
-    margin-bottom: 0;
-}
-.advice-case .advice-links li {
-    padding: 0;
-}
-.advice-case .button {
-    white-space: normal;
-    height: auto;
-    line-height: 1.6;
-    padding: .85rem 1.25rem;
-}
-.advice-case a:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 4px;
+.advice-case .advice-section > p { max-width: 66ch; margin-left: auto; margin-right: auto; }
+.advice-case p { text-align: left; }
+.advice-case header.major > p { text-align: center; }
+.advice-case .advice-section { margin-top: 3rem; padding-top: 3rem; border-top: 2px solid #eeeeee; }
+.advice-case h2 { max-width: 30ch; margin: 0 auto 1.5rem; font-size: 1.75rem; text-align: center; overflow-wrap: anywhere; text-wrap: balance; }
+.advice-case h3 { font-size: 1.1rem; }
+.advice-case .advice-number { display: block; margin-bottom: .5rem; text-align: center; font-family: "Source Sans Pro", sans-serif; font-weight: 900; letter-spacing: .12em; color: #717981; }
+.advice-case .advice-topics { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.5rem; margin-top: 2rem; font-size: .85rem; }
+.advice-case .advice-split { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: start; gap: 2rem; }
+.advice-case .advice-split p { line-height: 1.9; }
+.advice-case .advice-panel { padding: 1.75rem; background: #f5f5f5; border-top: 3px solid #212931; }
+.advice-case .advice-panel p { line-height: 1.9; }
+.advice-case .advice-panel p:last-child,
+.advice-case .advice-split > div > p:last-child { margin-bottom: 0; }
+.advice-case .advice-flow { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 2rem 0 0; padding: 0; border: 2px solid #eeeeee; }
+.advice-case .advice-flow li { padding: 1.5rem; }
+.advice-case .advice-flow li + li { border-left: 2px solid #eeeeee; }
+.advice-case .advice-flow span { display: block; color: #717981; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; }
+.advice-case .advice-flow strong { display: block; margin: .4rem 0 .75rem; font-family: "Source Sans Pro", sans-serif; font-weight: 900; }
+.advice-case .advice-flow p { margin: 0; font-size: .9rem; line-height: 1.85; }
+.advice-case .advice-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.advice-case .advice-priority { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: center; }
+.advice-case .advice-stat { padding: 2rem 1rem; text-align: center; background: #f5f5f5; }
+.advice-case .advice-stat > span { font-family: "Source Sans Pro", sans-serif; font-size: clamp(3rem, 6vw, 5rem); font-weight: 900; line-height: 1.1; }
+.advice-case .advice-stat p { margin: .75rem 0 0; font-size: .85rem; text-align: center; }
+.advice-case .advice-section > .advice-takeaway { max-width: none; margin-top: 2rem; margin-bottom: 0; padding: 1rem 1.5rem; border-left: 3px solid #212931; font-style: italic; }
+.advice-case .advice-links { flex-wrap: wrap; gap: .75rem; margin-bottom: 0; }
+.advice-case .advice-links li { padding: 0; }
+.advice-case .button { white-space: normal; height: auto; line-height: 1.6; padding: .85rem 1.25rem; }
+.advice-case a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.advice-case h2[id] { scroll-margin-top: 2rem; }
+@media screen and (max-width: 980px) {
+    .advice-page #main > .advice-case { padding: 3rem 2rem; }
+    .advice-case .advice-split { grid-template-columns: 1fr; }
+    .advice-case .advice-priority { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
 }
 @media screen and (max-width: 736px) {
-    .advice-page #main > .advice-case {
-        padding: 2rem 1.5rem;
-        font-size: max(1rem, 16px);
-    }
-    .advice-case .advice-section {
-        margin-top: 2rem;
-        padding-top: 2rem;
-    }
-    .advice-case h2 {
-        font-size: 1.5rem;
-    }
+    .advice-page #main > .advice-case { padding: 2rem 1.5rem; font-size: max(1rem, 16px); }
+    .advice-case .advice-section { margin-top: 2rem; padding-top: 2rem; }
+    .advice-case h2 { font-size: 1.5rem; }
+    .advice-case .advice-flow,
+    .advice-case .advice-roles,
+    .advice-case .advice-priority { grid-template-columns: 1fr; }
+    .advice-case .advice-flow li + li { border-left: 0; border-top: 2px solid #eeeeee; }
+    .advice-case .advice-panel { padding: 1.5rem; }
 }
