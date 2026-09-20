@@ -1,0 +1,23 @@
+/* Felles CV-lenke ved siden av sosiale lenker, også i mobilmenyen. */
+#nav ul.icons, #navPanel ul.icons { display: flex; align-items: center; gap: .75rem; padding: 0; }
+#nav ul.icons > li, #navPanel ul.icons > li { padding: 0; }
+#nav .nav-cv, #navPanel .nav-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    padding: .35rem .6rem;
+    border: 1px solid currentColor;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: .8rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: .075em;
+    text-decoration: none;
+}
+#nav .nav-cv:focus-visible, #navPanel .nav-cv:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+    #nav { padding-right: 1rem; }
+    #nav ul.links li a { padding-left: 1rem; padding-right: 1rem; }
+}
