@@ -28,4 +28,8 @@
 
 /* Ekstra luft mellom de to portrettgruppene, etter tredje rad. */
 .portrait-case .portrait-grid a:nth-child(7),
-.portrait-case .portrait-grid a:nth-child(8) { margin-top: 1.5rem; }
+.portrait-case .portrait-grid a:nth-child(8) {
+    margin-top: .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e2e2;
+}
