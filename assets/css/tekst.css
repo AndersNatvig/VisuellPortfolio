@@ -1,93 +1,42 @@
-/*
- * Tekstoversikten og tilhørende undersider. Lastes etter main.css.
- * Sideoppsett og størrelser; felles designsystem beholdes i main.css.
- */
-.text-page #main {
-    padding-bottom: 3rem;
-}
-.text-page #main > .text-intro,
-.text-page #main > .text-placeholder {
-    padding: 3rem 4rem;
-}
-.text-page #main header.major {
-    margin-bottom: 1.25rem;
-}
+/* Tekst og redaksjonelt: oversikt, etter main.css. */
+.text-page #main { padding-bottom: 3rem; }
+.text-page #main > .post { padding: 3rem 4rem 2.5rem; }
 .text-page #main > .post header.major h1 {
     font-size: clamp(1.75rem, 3.5vw, 2.75rem);
     line-height: 1.2;
     overflow-wrap: anywhere;
+    text-wrap: balance;
 }
-.text-page #main .text-intro > p {
-    max-width: 60ch;
-    text-align: center;
-    margin: 0 auto;
-}
-.text-page #main > .text-cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.text-page #main > .text-cards > article:nth-child(n) {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    padding: 2rem;
-    border: 0;
-    border-left: 2px solid #eeeeee;
-}
-.text-page #main > .text-cards > article:first-child {
-    border-left: 0;
-}
-.text-page #main .text-cards h2 {
-    font-size: 1.35rem;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
-}
+.text-page header.major { margin-bottom: 2rem; }
+.text-page header.major > p { max-width: 60ch; margin-left: auto; margin-right: auto; }
+.text-page .text-quote { max-width: 66ch; margin: 0 auto; padding: 1.5rem 2rem; background: #f5f5f5; border-left: 3px solid #212931; }
+.text-page .text-quote blockquote { border: 0; padding: 0; margin: 0; }
+.text-page .text-quote p { margin: 0; text-align: left; line-height: 1.9; }
+.text-page .text-quote figcaption { margin-top: .75rem; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .075em; text-transform: uppercase; }
+.text-page #main > .text-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0 4rem; gap: 1.5rem; border: 0; }
+.text-page #main > .text-cards > article:nth-child(n) { display: flex; flex-direction: column; width: auto; min-width: 0; padding: 2rem; border: 2px solid #eeeeee; text-align: left; }
+.text-page .text-number { display: block; margin-bottom: .75rem; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .12em; color: #717981; }
+.text-page #main .text-cards h2 { font-size: 1.4rem; line-height: 1.35; min-height: 2.7em; margin-bottom: 1rem; overflow-wrap: anywhere; text-wrap: balance; }
+.text-page #main .text-cards p { line-height: 1.85; margin-bottom: 1.5rem; }
+.text-page .text-cards .actions { margin-top: auto; margin-bottom: 0; }
+.text-page .button { height: auto; min-height: 3rem; padding: .85rem 1.25rem; line-height: 1.5; white-space: normal; }
+.text-page a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.text-page .text-back { margin-bottom: 2rem; font-size: .85rem; text-align: center; }
+.text-page .text-coming { max-width: 60ch; margin: 2rem auto; padding: 2rem; border: 2px solid #eeeeee; text-align: center; }
+.text-page .text-coming h2 { font-size: 1.35rem; }
+.text-page .text-coming p { margin: 0; text-align: center; }
+.text-page .text-links { flex-wrap: wrap; gap: .75rem; margin-bottom: 0; }
+.text-page .text-links li { padding: 0; }
 @media screen and (max-width: 980px) {
-    .text-page #main > .text-cards {
-        grid-template-columns: minmax(0, 1fr);
-    }
-    .text-page #main > .text-cards > article:nth-child(n) {
-        border-left: 0;
-        border-top: 2px solid #eeeeee;
-    }
-    .text-page #main > .text-cards > article:first-child {
-        border-top: 0;
-    }
+    .text-page #main > .post { padding: 2.5rem 2rem; }
+    .text-page #main > .text-cards { padding: 0 2rem; grid-template-columns: 1fr; }
+    .text-page #main .text-cards h2 { min-height: 0; }
 }
 @media screen and (max-width: 736px) {
-    .text-page #main > .text-intro,
-    .text-page #main > .text-placeholder,
-    .text-page #main > .text-cards > article:nth-child(n) {
-        padding: 2rem 1.5rem;
-    }
-    .text-page #main {
-        font-size: max(1rem, 16px);
-    }
-}
-
-.text-page #main .text-cards .actions {
-    margin-top: auto;
-    margin-bottom: 0;
-}
-.text-page #main .button {
-    white-space: normal;
-    height: auto;
-    line-height: 1.6;
-    padding: .85rem 1.25rem;
-}
-.text-page #main .text-placeholder .box {
-    max-width: 60ch;
-    margin: 2rem auto;
-}
-.text-page #main .text-placeholder .box p {
-    margin: 0;
-    text-align: center;
-}
-.text-page #main .text-back {
-    flex-wrap: wrap;
-    margin-bottom: 0;
-}
-.text-page a:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 4px;
+    .text-page #main { padding-bottom: 2rem; font-size: max(1rem, 16px); }
+    .text-page #main > .post { padding: 2rem 1.5rem; }
+    .text-page #main > .text-cards { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 1rem; }
+    .text-page #main > .text-cards > article:nth-child(n) { padding: 1.5rem; }
+    .text-page #main .text-cards h2 { min-height: 0; }
+    .text-page .text-quote, .text-page .text-coming { padding: 1.25rem; }
 }

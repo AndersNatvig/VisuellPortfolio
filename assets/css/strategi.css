@@ -1,94 +1,42 @@
-/*
- * Strategioversikten og tilhørende prosjektsider.
- * Lastes etter main.css. Kun sideoppsett og størrelser overstyres her.
- */
-/* Hvit luft under kortene, innenfor hovedinnholdets bakgrunn. */
-.strategy-page #main {
-    padding-bottom: 3rem;
-}
-
-.strategy-page #main > .post {
-    padding: 3rem 4rem;
-}
-.strategy-page #main header.major {
-    margin-bottom: 1.25rem;
-}
+/* Strategi og rådgivning: oversikt, etter main.css. */
+.strategy-page #main { padding-bottom: 3rem; }
+.strategy-page #main > .post { padding: 3rem 4rem 2.5rem; }
 .strategy-page #main > .post header.major h1 {
     font-size: clamp(1.75rem, 3.5vw, 2.75rem);
     line-height: 1.2;
     overflow-wrap: anywhere;
+    text-wrap: balance;
 }
-.strategy-page #main .strategy-intro > p {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 60ch;
-}
-.strategy-page #main > .strategy-cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.strategy-page #main > .strategy-cards > article:nth-child(n) {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    padding: 2rem;
-    border: 0;
-    border-left: 2px solid #eeeeee;
-}
-.strategy-page #main > .strategy-cards > article:first-child {
-    border-left: 0;
-}
-.strategy-page #main .strategy-cards h2 {
-    font-size: 1.35rem;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
-}
-.strategy-page #main .strategy-cards .actions {
-    margin-top: auto;
-    margin-bottom: 0;
-}
-.strategy-page #main .strategy-cards .button {
-    height: auto;
-    min-height: 3rem;
-    line-height: 1.5;
-    white-space: normal;
-    padding: .85rem 1rem;
-}
-.strategy-page #main .strategy-placeholder .box {
-    max-width: 60ch;
-    margin: 2rem auto;
-    text-align: center;
-}
-.strategy-page #main .strategy-placeholder .box p {
-    margin: 0;
-    text-align: center;
-}
-.strategy-page #main .strategy-back {
-    flex-wrap: wrap;
-    margin-bottom: 0;
-}
-.strategy-page a:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 4px;
-}
+.strategy-page header.major { margin-bottom: 2rem; }
+.strategy-page header.major > p { max-width: 60ch; margin-left: auto; margin-right: auto; }
+.strategy-page .strategy-quote { max-width: 66ch; margin: 0 auto; padding: 1.5rem 2rem; background: #f5f5f5; border-left: 3px solid #212931; }
+.strategy-page .strategy-quote blockquote { border: 0; padding: 0; margin: 0; }
+.strategy-page .strategy-quote p { margin: 0; text-align: left; line-height: 1.9; }
+.strategy-page .strategy-quote figcaption { margin-top: .75rem; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .075em; text-transform: uppercase; }
+.strategy-page #main > .strategy-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0 4rem; gap: 1.5rem; border: 0; }
+.strategy-page #main > .strategy-cards > article:nth-child(n) { display: flex; flex-direction: column; width: auto; min-width: 0; padding: 2rem; border: 2px solid #eeeeee; text-align: left; }
+.strategy-page .strategy-number { display: block; margin-bottom: .75rem; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .12em; color: #717981; }
+.strategy-page #main .strategy-cards h2 { font-size: 1.4rem; line-height: 1.35; min-height: 2.7em; margin-bottom: 1rem; overflow-wrap: anywhere; text-wrap: balance; }
+.strategy-page #main .strategy-cards p { line-height: 1.85; margin-bottom: 1.5rem; }
+.strategy-page .strategy-cards .actions { margin-top: auto; margin-bottom: 0; }
+.strategy-page .button { height: auto; min-height: 3rem; padding: .85rem 1.25rem; line-height: 1.5; white-space: normal; }
+.strategy-page a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.strategy-page .strategy-back { margin-bottom: 2rem; font-size: .85rem; text-align: center; }
+.strategy-page .strategy-coming { max-width: 60ch; margin: 2rem auto; padding: 2rem; border: 2px solid #eeeeee; text-align: center; }
+.strategy-page .strategy-coming h2 { font-size: 1.35rem; }
+.strategy-page .strategy-coming p { margin: 0; text-align: center; }
+.strategy-page .strategy-links { flex-wrap: wrap; gap: .75rem; margin-bottom: 0; }
+.strategy-page .strategy-links li { padding: 0; }
 @media screen and (max-width: 980px) {
-    .strategy-page #main > .strategy-cards {
-        grid-template-columns: minmax(0, 1fr);
-    }
-    .strategy-page #main > .strategy-cards > article:nth-child(n) {
-        border-left: 0;
-        border-top: 2px solid #eeeeee;
-    }
-    .strategy-page #main > .strategy-cards > article:first-child {
-        border-top: 0;
-    }
+    .strategy-page #main > .post { padding: 2.5rem 2rem; }
+    .strategy-page #main > .strategy-cards { padding: 0 2rem; grid-template-columns: 1fr; }
+    .strategy-page #main .strategy-cards h2 { min-height: 0; }
 }
 @media screen and (max-width: 736px) {
-    .strategy-page #main > .post,
-    .strategy-page #main > .strategy-cards > article:nth-child(n) {
-        padding: 2rem 1.5rem;
-    }
-    .strategy-page #main {
-        font-size: max(1rem, 16px);
-    }
+    .strategy-page #main { padding-bottom: 2rem; font-size: max(1rem, 16px); }
+    .strategy-page #main > .post { padding: 2rem 1.5rem; }
+    .strategy-page #main > .strategy-cards { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 1rem; }
+    .strategy-page #main > .strategy-cards > article:nth-child(n) { padding: 1.5rem; }
+    .strategy-page #main .strategy-cards h2 { min-height: 0; }
+    .strategy-page .strategy-quote, .strategy-page .strategy-coming { padding: 1.25rem; }
 }
