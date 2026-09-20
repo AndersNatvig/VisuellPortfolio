@@ -219,3 +219,62 @@
         display: flex;
     }
 }
+
+/* Utvalgte prosjekter: samme innrammede kort som på produksjonssiden. */
+.home-page #main { padding-bottom: 5rem; }
+.home-page #main > .home-projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 0 4rem;
+    border: 0;
+}
+.home-page #main > .home-projects > article:nth-child(n) {
+    width: auto;
+    min-width: 0;
+    padding: 2rem;
+    border: 2px solid #eeeeee;
+    text-align: left;
+}
+.home-page #main > .home-projects h3 {
+    font-size: 1.35rem;
+    line-height: 1.35;
+    min-height: 2.7em;
+    text-wrap: balance;
+}
+.home-page #main > .home-projects .date {
+    display: block;
+    margin-bottom: .75rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: .85rem;
+    font-weight: 900;
+    letter-spacing: .075em;
+    color: #717981;
+}
+.home-page #main > .home-projects .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.home-page #main > .home-projects p { line-height: 1.85; }
+.home-page #main > .home-projects .actions { margin-bottom: 0; }
+.home-page #main .button {
+    height: auto;
+    min-height: 3rem;
+    padding: .85rem 1.25rem;
+    line-height: 1.5;
+    white-space: normal;
+}
+.home-page #main .home-about .row > div { display: flex; flex-direction: column; }
+.home-page #main .home-about .row > div > .actions { margin-top: auto; margin-bottom: 0; }
+@media screen and (min-width: 737px) and (max-width: 980px) {
+    .home-page #main > .home-projects { grid-template-columns: repeat(2,minmax(0,1fr)); padding: 0 2rem; }
+}
+@media screen and (max-width: 736px) {
+    .home-page #main { padding-bottom: 3.5rem; }
+    .home-page #main > .home-projects { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 1rem; }
+    .home-page #main > .home-projects > article:nth-child(n) { padding: 1.5rem; }
+    .home-page #main > .home-projects h3 { min-height: 0; }
+}
