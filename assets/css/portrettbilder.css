@@ -25,3 +25,7 @@
 .portrait-case h2 { font-size: 1.5rem; }
 .portrait-case .portrait-grid { gap: .4rem; }
 }
+
+/* Ekstra luft mellom de to portrettgruppene, etter tredje rad. */
+.portrait-case .portrait-grid a:nth-child(7),
+.portrait-case .portrait-grid a:nth-child(8) { margin-top: 1.5rem; }
