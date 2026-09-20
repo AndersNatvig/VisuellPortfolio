@@ -1,0 +1,51 @@
+/* Produksjon: oversikt med bildekort, etter main.css. */
+.production-page #main { padding-bottom: 3rem; }
+.production-page #main > .post { padding: 3rem 4rem 2.5rem; }
+.production-page #main > .post header.major h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+.production-page header.major { margin-bottom: 2rem; }
+.production-page header.major > p { max-width: 60ch; margin-left: auto; margin-right: auto; }
+.production-page .production-quote { max-width: 66ch; margin: 0 auto; padding: 1.5rem 2rem; background: #f5f5f5; border-left: 3px solid #212931; }
+.production-page .production-quote blockquote { border: 0; padding: 0; margin: 0; }
+.production-page .production-quote p { margin: 0; text-align: left; line-height: 1.9; }
+.production-page .production-quote figcaption { margin-top: .75rem; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .075em; text-transform: uppercase; }
+.production-page #main > .production-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0 4rem; gap: 1.5rem; border: 0; }
+.production-page #main > .production-cards > article:nth-child(n) { display: flex; flex-direction: column; width: auto; min-width: 0; padding: 2rem; border: 2px solid #eeeeee; text-align: left; }
+.production-page .production-number { display: block; margin-bottom: .75rem; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .12em; color: #717981; }
+.production-page #main .production-cards h2 { font-size: 1.4rem; line-height: 1.35; min-height: 2.7em; margin-bottom: 1rem; overflow-wrap: anywhere; text-wrap: balance; }
+.production-page #main .production-cards p { line-height: 1.85; margin-bottom: 1.5rem; }
+.production-page .production-cards .actions { margin-top: auto; margin-bottom: 0; }
+.production-page .button { height: auto; min-height: 3rem; padding: .85rem 1.25rem; line-height: 1.5; white-space: normal; }
+.production-page a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media screen and (max-width: 980px) {
+    .production-page #main > .post { padding: 2.5rem 2rem; }
+    .production-page #main > .production-cards { padding: 0 2rem; }
+}
+@media screen and (max-width: 736px) {
+    .production-page #main { padding-bottom: 2rem; font-size: max(1rem, 16px); }
+    .production-page #main > .post { padding: 2rem 1.5rem; }
+    .production-page #main > .production-cards { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 1rem; }
+    .production-page #main > .production-cards > article:nth-child(n) { padding: 1.5rem; }
+    .production-page #main .production-cards h2 { min-height: 0; }
+}
+
+/* Like bilderammer med hele motivet synlig. */
+.production-page .production-cards .image.fit {
+    margin: 0 0 1.5rem;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.production-page .production-cards .image.fit img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    display: block;
+}
+@media screen and (max-width: 736px) {
+    .production-page .production-quote { padding: 1.25rem; }
+}
