@@ -1,0 +1,41 @@
+/* Bærekraftsmålene: sidetillegg til main.css. */
+.bm-page #main > .bm-case { padding: 3rem 4rem; }
+.bm-case header.major { margin-bottom: 2rem; }
+.bm-page #main > .post header.major h1 { font-size: clamp(1.75rem, 3.5vw, 2.75rem); line-height: 1.2; overflow-wrap: anywhere; text-wrap: balance; }
+.bm-case .bm-lead, .bm-case .bm-section { max-width: 66ch; margin-left: auto; margin-right: auto; }
+.bm-case p { text-align: left; }
+.bm-case header.major p { text-align: center; }
+.bm-case .bm-label { display: block; margin-bottom: .75rem; color: #717981; font-family: "Source Sans Pro", sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .075em; text-transform: uppercase; }
+.bm-case .bm-topics { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 2rem; }
+.bm-case .button { height: auto; min-height: 3rem; padding: .85rem 1.25rem; line-height: 1.5; white-space: normal; }
+.bm-case .bm-section { border-top: 2px solid #eeeeee; margin-top: 3rem; padding-top: 3rem; }
+.bm-case h2 { margin-bottom: 1.5rem; font-size: 1.75rem; text-align: center; text-wrap: balance; scroll-margin-top: 2rem; }
+.bm-case h3 { font-size: 1.15rem; }
+.bm-case .bm-panel { padding: 1.5rem 2rem; background: #f5f5f5; border-top: 3px solid #212931; margin-bottom: 2rem; }
+.bm-case .bm-panel p { margin-bottom: 0; }
+.bm-case .bm-stat { padding: 1.5rem; background: #f5f5f5; margin-bottom: 2rem; text-align: center; }
+.bm-case .bm-stat strong { display: block; font-family: "Source Sans Pro", sans-serif; font-size: 4rem; line-height: 1.1; font-weight: 900; }
+.bm-case .bm-stat span { font-style: italic; }
+.bm-case .bm-note { padding-left: 1.5rem; border-left: 3px solid #212931; }
+.bm-case .bm-steps { counter-reset: step; list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.bm-case .bm-steps li { padding: 1.5rem; border: 2px solid #eeeeee; line-height: 1.85; }
+.bm-case .bm-steps li::before { counter-increment: step; content: "0" counter(step); display: block; margin-bottom: .5rem; font-family: "Source Sans Pro", sans-serif; font-weight: 900; color: #717981; }
+.bm-case .bm-showcase { max-width: none; }
+.bm-case .bm-gallery-intro { text-align: center; }
+.bm-case .bm-posts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.bm-case .bm-post { min-width: 0; padding: 1.5rem; border: 2px solid #eeeeee; }
+.bm-case .bm-gallery { margin-bottom: 1.5rem; }
+.bm-case .bm-slides img { display: block; width: 100%; height: auto; margin-bottom: 1rem; }
+.bm-case .bm-slides img[hidden], .bm-case .bm-controls[hidden] { display: none; }
+.bm-case .bm-controls { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.bm-case .bm-controls button { padding: .6rem 1rem; font-size: 1.2rem; }
+.bm-case .bm-status { font-size: .85rem; }
+.bm-case a:focus-visible, .bm-case button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media screen and (max-width: 980px) { .bm-page #main > .bm-case { padding: 3rem 2rem; } }
+@media screen and (max-width: 736px) {
+.bm-page #main > .bm-case { padding: 2rem 1.5rem; font-size: max(1rem, 16px); }
+.bm-case .bm-section { margin-top: 2rem; padding-top: 2rem; }
+.bm-case h2 { font-size: 1.5rem; }
+.bm-case .bm-posts, .bm-case .bm-steps { grid-template-columns: 1fr; }
+.bm-case .bm-panel, .bm-case .bm-post { padding: 1.25rem; }
+}
