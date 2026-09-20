@@ -1,0 +1,28 @@
+/* Fotografering: tillegg til main.css. */
+.photo-page #main > .photo-case { padding: 3rem 4rem; }
+.photo-page #main > .post header.major h1 { font-size: clamp(1.75rem,3.5vw,2.75rem); line-height: 1.2; }
+.photo-case header.major { margin-bottom: 2rem; }
+.photo-case .photo-quote { max-width: 66ch; margin: 0 auto; padding: 1.5rem 2rem; background: #f5f5f5; border-left: 3px solid #212931; }
+.photo-case blockquote { border: 0; padding: 0; margin: 0; }
+.photo-case blockquote p { margin: 0; text-align: left; }
+.photo-case figcaption,.photo-case .photo-number { font-family: "Source Sans Pro",sans-serif; font-weight: 900; font-size: .85rem; letter-spacing: .075em; text-transform: uppercase; }
+.photo-case figcaption { margin-top: .75rem; }
+.photo-case .photo-section { margin-top: 3rem; padding-top: 3rem; border-top: 2px solid #eee; }
+.photo-case h2 { font-size: 1.75rem; text-align: center; }
+.photo-case .photo-caption { text-align: center; }
+.photo-case .photo-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .75rem; }
+.photo-case .photo-grid a,.photo-case .photo-cover { display: block; border: 0; overflow: hidden; }
+.photo-case .photo-grid img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.photo-case .photo-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; }
+.photo-case .photo-cards article { display: flex; flex-direction: column; min-width: 0; border: 2px solid #eee; padding: 1.5rem; }
+.photo-case .photo-number { display: block; margin-bottom: .75rem; color: #717981; }
+.photo-case h3 { font-size: 1.25rem; min-height: 2.7em; line-height: 1.35; overflow-wrap: anywhere; text-wrap: balance; }
+.photo-case .photo-cover { margin-bottom: 1.5rem; }
+.photo-case .photo-cover img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.photo-case .photo-cards p { text-align: left; line-height: 1.85; }
+.photo-case .button { height: auto; min-height: 3rem; line-height: 1.5; padding: .85rem 1.25rem; white-space: normal; }
+.photo-case .photo-cards .button { margin-top: auto; align-self: flex-start; }
+.photo-case .photo-back { margin-top: 3rem; text-align: center; }
+.photo-case a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media(max-width:980px) { .photo-page #main > .photo-case { padding: 3rem 2rem; } .photo-case .photo-cards { grid-template-columns: 1fr; } .photo-case h3 { min-height: 0; } .photo-case .photo-cover { max-width: 24rem; width: 100%; } }
+@media(max-width:736px) { .photo-page #main > .photo-case { padding: 2rem 1.5rem; font-size: max(1rem,16px); } .photo-case .photo-quote { padding: 1.25rem; } .photo-case .photo-section { margin-top: 2rem; padding-top: 2rem; } .photo-case h2 { font-size: 1.5rem; } .photo-case .photo-grid { gap: .4rem; } }
