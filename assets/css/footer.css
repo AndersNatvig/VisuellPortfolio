@@ -1,0 +1,47 @@
+/* Felles footer på alle sider. Lastes etter nettstedets øvrige stilark. */
+#footer.site-footer {
+    display: block;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3.5rem 4rem 1.75rem;
+    border: 0;
+    background: #212931;
+    color: #e2e6e9;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+}
+#footer.site-footer, #footer.site-footer * { box-sizing: border-box; }
+#footer.site-footer .footer-top { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); gap: 3rem; }
+#footer.site-footer .footer-intro::before { content: ""; display: block; width: 3rem; height: 3px; background: #18bfef; margin-bottom: 1.5rem; }
+#footer.site-footer p { margin: 0; color: #c8cfd4; font-size: .9rem; line-height: 1.9; text-align: left; }
+#footer.site-footer .footer-eyebrow { margin-bottom: .75rem; font-family: "Source Sans Pro",sans-serif; font-size: .8rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+#footer.site-footer h2 { margin: 0 0 1rem; color: #fff; font-family: "Source Sans Pro",sans-serif; font-size: clamp(1.8rem,3.4vw,2.6rem); font-weight: 900; line-height: 1.15; letter-spacing: .04em; text-transform: uppercase; text-wrap: balance; }
+#footer.site-footer a { color: #fff; border: 0; text-decoration: none; }
+#footer.site-footer a:hover { color: #18bfef !important; }
+#footer.site-footer a:focus-visible { outline: 2px solid #18bfef; outline-offset: 5px; }
+#footer.site-footer .footer-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-top: 1.5rem; padding: .8rem 1.2rem; border: 1px solid #89969f; font-family: "Source Sans Pro",sans-serif; font-size: .85rem; font-weight: 900; letter-spacing: .05em; text-transform: uppercase; }
+#footer.site-footer .footer-cta:hover { border-color: #18bfef; }
+#footer.site-footer .footer-contact { margin: 0; font-style: normal; align-self: center; }
+#footer.site-footer .footer-contact > a { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: .15rem 1rem; padding: 1rem 0; border-bottom: 1px solid #46515b; font-size: .95rem; overflow-wrap: anywhere; }
+#footer.site-footer .footer-label { grid-column: 1; color: #abb7c0; font-family: "Source Sans Pro",sans-serif; font-size: .75rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+#footer.site-footer .footer-contact > a > span:nth-child(2) { grid-column: 1; }
+#footer.site-footer .footer-arrow { grid-column: 2; grid-row: 1 / 3; font-size: 1.3rem; }
+#footer.site-footer .footer-nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #46515b; }
+#footer.site-footer .footer-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; font-family: "Source Sans Pro",sans-serif; font-size: .8rem; font-weight: 900; line-height: 1.5; letter-spacing: .04em; text-transform: uppercase; }
+#footer.site-footer .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: .75rem 2rem; margin-top: 1.25rem; }
+#footer.site-footer .footer-bottom p, #footer.site-footer .footer-bottom a { font-size: .75rem; color: #abb7c0; }
+#footer.site-footer .footer-bottom a { display: inline-flex; align-items: center; min-height: 2.75rem; gap: .5rem; }
+@media screen and (max-width: 980px) {
+    #footer.site-footer { padding: 3rem 2rem 1.5rem; }
+    #footer.site-footer .footer-top { gap: 2rem; }
+}
+@media screen and (max-width: 736px) {
+    #footer.site-footer { padding: 2.5rem 1.5rem 1.5rem; }
+    #footer.site-footer .footer-top { grid-template-columns: 1fr; }
+    #footer.site-footer .footer-nav { margin-top: 2rem; gap: .25rem 1.25rem; }
+    #footer.site-footer .footer-contact > a { font-size: max(.95rem,16px); }
+}
+@media screen and (max-width: 480px) { #footer.site-footer { width: 100%; } }
