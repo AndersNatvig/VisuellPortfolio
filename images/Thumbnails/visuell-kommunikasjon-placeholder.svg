@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#f5f5f5"/>
+  <rect x="1" y="1" width="1078" height="1078" fill="none" stroke="#e2e2e2" stroke-width="2"/>
+  <text x="540" y="555" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#717981">Bilde kommer</text>
+</svg>
